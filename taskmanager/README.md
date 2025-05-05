@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Елегантно и интуитивно приложение за управление на задачи, изградено с React, TypeScript и Bootstrap.
 
-Currently, two official plugins are available:
+![Task Manager Preview](preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Функционалности
 
-## Expanding the ESLint configuration
+- ✨ Създаване на нови задачи с име и описание
+- 📝 Подробно описание за всяка задача
+- ✅ Маркиране на задачи като завършени/незавършени
+- 🎯 Визуално проследяване на статуса на задачите
+- 📱 Responsive дизайн за всички устройства
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Технологии
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React
+- TypeScript
+- Bootstrap 5
+- Vite
+
+## 📦 Инсталация
+
+1. Клонирайте репозиторито:
+```bash
+git clone https://github.com/your-username/task-manager.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Навигирайте до директорията на проекта:
+```bash
+cd taskmanager
 ```
+
+3. Инсталирайте зависимостите:
+```bash
+npm install
+```
+
+4. Стартирайте приложението в режим за разработка:
+```bash
+npm run dev
+```
+
+## 💻 Използване
+
+1. Отворете приложението в браузъра
+2. Използвайте формата "Add New Task" за създаване на нова задача
+3. Попълнете име и описание на задачата
+4. Изберете първоначален статус (Завършена/Незавършена)
+5. Натиснете "Add Task" за да добавите задачата
+6. Използвайте "Show All Tasks" за да видите всички задачи
+7. Използвайте checkbox-а за да промените статуса на задача
+
+## 🤝 Принос
+
+Приносът към проекта е добре дошъл! Моля, следвайте тези стъпки:
+
+1. Fork-нете репозиторито
+2. Създайте feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit-нете промените (`git commit -m 'Add some amazing feature'`)
+4. Push към branch-а (`git push origin feature/amazing-feature`)
+5. Отворете Pull Request
+
+## 📄 Лиценз
+
+Разпространява се под MIT лиценз. Вижте `LICENSE` файла за повече информация.
+
+## 📞 Контакти
+
+Вашето име - [@your_twitter](https://twitter.com/your_twitter)
+
+Линк към проекта: [https://github.com/your-username/task-manager](https://github.com/your-username/task-manager)
